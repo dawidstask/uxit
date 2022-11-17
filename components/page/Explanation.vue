@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h1>Co to jest audyt UX?</h1>
-    <p>
+    <h1><span>Co to jest</span> <span>audyt UX?</span></h1>
+    <p class="first">
       <app-bold-text text="Analiza ekspercka" font-size="20px" /> doświadczonego
       Specjalisty UX: aktywnego zawodowo projektanta i badacza
     </p>
@@ -28,7 +28,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
+h1 {
+  display: flex;
+  flex-direction: column;
+  span {
+    font-family: 'Inter Bold', sans-serif;
+    font-size: 40px;
+  }
+}
 p {
+  margin-top: 36px;
+  margin-left: 40px;
+  margin-right: 10px;
   font-size: 20px;
+  &.first {
+    margin-top: 56px;
+  }
 }
 </style>
