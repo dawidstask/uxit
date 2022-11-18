@@ -51,5 +51,10 @@ export default {
   build: {},
   router: {
     base: '/uxit/'
-  }
+  },
+
+  // Allows page refresh to work on github pages
+  generate: {
+    fallback: "404.html"
+  },
 }
