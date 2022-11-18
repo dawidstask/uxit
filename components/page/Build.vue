@@ -3,7 +3,7 @@
     <div class="left">
       <div class="wrapper__left">
         <div class="wrapper__left--top">
-          <img class="logo" :src="require('~/static/build_logo.svg')" alt="logo">
+          <img class="logo" :src="require('@/static/build_logo.svg')" alt="logo">
           <span class="first">We Are Busy Working On Something Awesome</span>
           <span class="second">Strona w budowie</span>
           <button @click="onButtonClick()">Instagram</button>
